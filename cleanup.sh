@@ -7,7 +7,7 @@ dir="Cleanup/$cleanup"
 main (){
   if [[ $# -eq 1 ]]; then
     mv -n "$1" "$dir"
-    exit 1
+    exit 0
   fi
 
   mkdir -p "$dir"
